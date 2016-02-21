@@ -30,7 +30,7 @@ class LCDplate():
 		self.lcd.create_char(5,[31,31,31,31,31,31,31,31]) # Block symbol for volume bar
 		
 	def start(self,line1,line2):
-		self.lcd.set_color(1,0,0) #backlight on for white/blue 16x2
+		self.lcd.set_color(0.0,1.0,0.0) #backlight on for white/blue 16x2
 		self.messageFlag.set()	
 		self.running = True			
 		self.blistener.start()		
