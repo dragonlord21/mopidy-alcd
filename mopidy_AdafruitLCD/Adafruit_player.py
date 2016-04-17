@@ -25,14 +25,14 @@ class AdafruitPlayer():
 		self.tracklist_change_ignore = []
 		self.core.playback.volume = 50
 		self.menus=menus(core,self,self.plate)
-		logger.info("Adafruit CharLCDPlate Init Successfull")
+		logger.info("Adafruit CharLCDPlate Init")
 
 
 	def start(self):
 		self.running = True
 		self.plate.start("Starting".center(16),"Mopidy LCD".center(16))
 		self.thread.start()
-		logger.info("Adafruit CharLCDPlate start successfull")
+		logger.info("Adafruit CharLCDPlate startll")
 
 	def buttonLoop(self):
 		while self.running:
